@@ -6,6 +6,7 @@ After=network.target
 Type=forking
 User=USER_NAME
 Group=USER_NAME
+WorkingDirectory=/home/USER_NAME
 ExecStart=/usr/local/bin/legsc start
 ExecStop=/usr/local/bin/legsc stop
 Restart=always
